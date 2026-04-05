@@ -1,0 +1,202 @@
+﻿@model Tp2LnhWebApp.Models.Joueur
+
+@{
+    ViewData["Title"] = "Ajouter un joueur";
+    var estGardien = Model.TypeJoueur?.ToLower() == "gardien";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <div class="card shadow-lg border-0 bg-body-tertiary">
+                <div class="card-header text-white text-center py-3" style="background-color: #b11226;">
+                    <h3 class="mb-0 text-uppercase fw-bold">
+                        <i class="bi bi-person-plus-fill me-2"></i>Nouveau Joueur - Saison @ViewBag.Saison
+                    </h3>
+                </div>
+
+                <div class="card-body p-4 p-md-5">
+                    @* AJOUT : enctype="multipart/form-data" pour permettre l'upload *@
+                    <form asp-action="JoueurCreer" method="post" enctype="multipart/form-data">
+                        @* Conserve l'ID du joueur (sera 0 pour une création, ce qui est normal) *@
+                        <input type="hidden" asp-for="Idj" />
+
+                        <input type="hidden" asp-for="Ide" />
+
+                        <div class="row">
+                            @* --- COLONNE GAUCHE : PROFIL COMPLET --- *@
+                            <div class="col-lg-7 border-end-lg">
+                                <h5 class="fw-bold text-danger border-bottom pb-2 mb-4">
+                                    <i class="bi bi-card-list me-2"></i>Identité & Physique
+                                </h5>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-9 mb-3">
+                                        <label asp-for="Nom" class="form-label fw-bold small opacity-75 text-uppercase">Nom Complet</label>
+                                        <input asp-for="Nom" class="form-control bg-body border-secondary-subtle" placeholder="ex: Connor McDavid" required />
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label asp-for="Numero" class="form-label fw-bold small opacity-75 text-uppercase">#</label>
+                                        <input asp-for="Numero" type="number" class="form-control bg-body border-secondary-subtle" placeholder="97" required />
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-8 mb-3">
+                                        <label asp-for="ProfilDetails.naissance.date" class="form-label fw-bold small opacity-75 text-uppercase">Date de Naissance</label>
+                                        <input asp-for="ProfilDetails.naissance.date" type="date" class="form-control bg-body border-secondary-subtle" required />
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label asp-for="ProfilDetails.age" class="form-label fw-bold small opacity-75 text-uppercase">Âge</label>
+                                        <input asp-for="ProfilDetails.age" type="number" class="form-control bg-body border-secondary-subtle" placeholder="25" required />
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-4 mb-3">
+                                        <label asp-for="ProfilDetails.tailleCm" class="form-label fw-bold small opacity-75 text-uppercase">Taille</label>
+                                        <div class="input-group">
+                                            <input asp-for="ProfilDetails.tailleCm" type="number" class="form-control bg-body border-secondary-subtle" placeholder="185" />
+                                            <span class="input-group-text bg-body-secondary border-secondary-subtle">cm</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label asp-for="ProfilDetails.poidsKg" class="form-label fw-bold small opacity-75 text-uppercase">Poids</label>
+                                        <div class="input-group">
+                                            <input asp-for="ProfilDetails.poidsKg" type="number" class="form-control bg-body border-secondary-subtle" placeholder="90" />
+                                            <span class="input-group-text bg-body-secondary border-secondary-subtle">kg</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label asp-for="Main" class="form-label fw-bold small opacity-75 text-uppercase">Main</label>
+                                        <select asp-for="Main" class="form-select bg-body border-secondary-subtle">
+                                            <option value="Gauche">Gauche</option>
+                                            <option value="Droite">Droite</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                @* CHANGEMENT : Input de type FILE pour la photo *@
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold small opacity-75 text-uppercase">Photo du joueur (Fichier)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-body-secondary border-secondary-subtle"><i class="bi bi-image"></i></span>
+                                        <input type="file" name="photoFile" class="form-control bg-body border-secondary-subtle" accept="image/*" />
+                                    </div>
+                                    <div class="form-text small text-muted">Format suggéré : JPG ou PNG. Le fichier sera stocké sur le serveur.</div>
+                                    @* On garde l'input caché pour la valeur du chemin si nécessaire, ou on laisse le contrôleur gérer *@
+                                    <input type="hidden" asp-for="Photo" />
+                                </div>
+                            </div>
+
+                            @* --- COLONNE DROITE : POSTE ET STATS --- *@
+                            <div class="col-lg-5 ps-lg-4 mt-4 mt-lg-0">
+                                <h5 class="fw-bold text-danger border-bottom pb-2 mb-4">
+                                    <i class="bi bi-person-badge me-2"></i>Poste & Statistiques
+                                </h5>
+
+                                <div class="row mb-4">
+                                    <div class="col-6">
+                                        <label asp-for="TypeJoueur" class="form-label fw-bold small opacity-75 text-uppercase">Catégorie</label>
+                                        <select asp-for="TypeJoueur" class="form-select border-danger fw-bold bg-body">
+                                            <option value="Patineur">Patineur</option>
+                                            <option value="Gardien">Gardien</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label asp-for="Poste" class="form-label fw-bold small opacity-75 text-uppercase">Position</label>
+                                        <input asp-for="Poste" class="form-control bg-body border-secondary-subtle" placeholder="ex: C / AG" required />
+                                    </div>
+                                </div>
+
+                                <div class="p-3 border rounded bg-body shadow-sm">
+                                    <p class="fw-bold text-danger extra-small mb-3">Statistiques de départ</p>
+                                    <div class="row g-2">
+                                        <div class="col-4 mb-2">
+                                            <label asp-for="Statistique.matchs" class="form-label extra-small fw-bold">PJ</label>
+                                            <input asp-for="Statistique.matchs" type="number" value="0" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                        </div>
+
+                                        @if (estGardien)
+                                        {
+                                            <div class="col-4 mb-2">
+                                                <label asp-for="Statistique.victoires" class="form-label extra-small fw-bold">V</label>
+                                                <input asp-for="Statistique.victoires" type="number" value="0" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <label asp-for="Statistique.pourcentageArrets" class="form-label extra-small fw-bold">%ARR</label>
+                                                <input asp-for="Statistique.pourcentageArrets" type="number" step="0.001" value="0.000" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="col-4 mb-2">
+                                                <label asp-for="Statistique.buts" class="form-label extra-small fw-bold">B</label>
+                                                <input asp-for="Statistique.buts" type="number" value="0" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <label asp-for="Statistique.passes" class="form-label extra-small fw-bold">A</label>
+                                                <input asp-for="Statistique.passes" type="number" value="0" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                            </div>
+                                            <div class="col-6">
+                                                <label asp-for="Statistique.plusMoins" class="form-label extra-small fw-bold">+/-</label>
+                                                <input asp-for="Statistique.plusMoins" type="number" value="0" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                            </div>
+                                            <div class="col-6">
+                                                <label asp-for="Statistique.minutesPunition" class="form-label extra-small fw-bold">PIM</label>
+                                                <input asp-for="Statistique.minutesPunition" type="number" value="0" class="form-control form-control-sm bg-body-secondary border-0 text-center" />
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-5 pt-3 border-top border-secondary-subtle">
+                            <a asp-action="JoueurParEquipe" asp-route-id="@Model.Ide" class="btn btn-outline-secondary px-4 fw-bold">
+                                <i class="bi bi-x-circle me-2"></i>ANNULER
+                            </a>
+                            <button type="submit" class="btn btn-success btn-lg px-5 fw-bold shadow">
+                                <i class="bi bi-person-check-fill me-2"></i>ENREGISTRER
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .extra-small {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #b11226 !important;
+        box-shadow: 0 0 0 0.25rem rgba(177, 18, 38, 0.15);
+    }
+
+    input::placeholder {
+        opacity: 0.5;
+        font-size: 0.9rem;
+    }
+
+    /* Style spécifique pour l'input file Bootstrap */
+    input[type=file]::file-selector-button {
+        background-color: #b11226;
+        color: white;
+        border: none;
+        padding: 0.2rem 1rem;
+        margin-right: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #8e0e1e;
+        }
+</style>

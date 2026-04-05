@@ -1,0 +1,166 @@
+﻿@model Tp2LnhWebApp.Models.Joueur
+
+@{
+    ViewData["Title"] = "Fiche de " + Model.Nom;
+    var estGardien = Model.TypeJoueur?.Equals("Gardien", StringComparison.OrdinalIgnoreCase) ?? false;
+
+    // Gestion de l'image par défaut si null
+    var photoPath = string.IsNullOrEmpty(Model.Photo) ? "/images/joueurs/default-player.png" : Model.Photo;
+    var logoUrl = ViewBag.LogoClair;
+}
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-lg border-0 overflow-hidden">
+
+        @* Header *@
+        <div class="card-header text-white d-flex justify-content-between align-items-center py-3 position-relative" style="background-color: #b11226;">
+            <div class="d-flex align-items-center" style="z-index: 2;">
+                <h3 class="mb-0 text-uppercase fw-bold"><i class="bi bi-person-vcard me-2"></i>Fiche Joueur</h3>
+            </div>
+
+            @if (!string.IsNullOrEmpty(logoUrl))
+            {
+                <img src="@logoUrl" class="position-absolute end-0 top-50 translate-middle-y me-5"
+                     style="height: 80px; opacity: 0.2; pointer-events: none;" alt="Logo filigrane">
+            }
+
+            <a asp-action="JoueurParEquipe" asp-route-id="@Model.Ide" class="btn btn-sm btn-outline-light border-2 fw-bold" style="z-index: 2;">
+                <i class="bi bi-arrow-left me-1"></i>RETOUR À L'ÉQUIPE
+            </a>
+        </div>
+
+        <div class="row g-0 bg-white">
+            @* Colonne Gauche : Photo et Identité *@
+            <div class="col-md-4 bg-light d-flex flex-column align-items-center p-4 border-end">
+                <div class="position-relative mb-3">
+                    @* CORRECTION ICI : Pas de '?' après le src *@
+                    <img src="@photoPath" class="img-fluid rounded shadow"
+                         style="max-height: 320px; border: 8px solid white; width: 100%; object-fit: cover;"
+                         alt="@Model.Nom">
+
+                    <div class="position-absolute bottom-0 end-0 bg-dark text-white px-3 py-1 fw-bold fs-3 shadow">
+                        #@Model.Numero
+                    </div>
+                </div>
+
+                <h2 class="fw-bold text-dark text-center mb-1">@Model.Nom</h2>
+                <span class="badge fs-6 px-4 mb-3" style="background-color: #00205B;">@Model.Poste</span>
+            </div>
+
+            @* Colonne Droite : Infos et Stats *@
+            <div class="col-md-8">
+                <div class="card-body p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="d-flex align-items-center">
+                            @if (!string.IsNullOrEmpty(logoUrl))
+                            {
+                                <img src="@logoUrl" width="60" height="60" class="me-3" style="object-fit: contain;">
+                            }
+                            <div>
+                                <h4 class="text-dark fw-bold mb-0">@(ViewBag.NomEquipe ?? "Équipe Inconnue")</h4>
+                                <span class="badge bg-secondary">Code: @ViewBag.CodeEquipe</span>
+                            </div>
+                        </div>
+                        <form asp-action="JoueurSupprimer" method="post" asp-route-id="@Model.Idj">
+                            <button type="submit" class="btn btn-outline-danger btn-sm fw-bold"
+                                    onclick="return confirm('Êtes-vous sûr ?');">
+                                <i class="bi bi-trash3 me-1"></i>Supprimer
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        @* Profil Physique *@
+                        <div class="col-md-6 mb-4">
+                            <h5 class="fw-bold text-danger border-bottom pb-2 mb-3">
+                                <i class="bi bi-person-lines-fill me-2"></i>Profil Physique
+                            </h5>
+                            <ul class="list-group list-group-flush border-0">
+                                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between">
+                                    <span class="text-muted fw-bold">Âge</span>
+                                    <span>@(Model.ProfilDetails?.age ?? 0) ans</span>
+                                </li>
+                                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between">
+                                    <span class="text-muted fw-bold">Taille</span>
+                                    <span>@(Model.ProfilDetails?.tailleCm ?? 0) cm</span>
+                                </li>
+                                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between">
+                                    <span class="text-muted fw-bold">Poids</span>
+                                    <span>@(Model.ProfilDetails?.poidsKg ?? 0) kg</span>
+                                </li>
+                                <li class="list-group-item bg-transparent px-0 d-flex justify-content-between">
+                                    <span class="text-muted fw-bold">Main</span>
+                                    <span>@(Model.Main ?? "N/A")</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        @* Statistiques *@
+                        <div class="col-md-6 mb-4">
+                            <h5 class="fw-bold text-danger border-bottom pb-2 mb-3">
+                                <i class="bi bi-graph-up me-2"></i>Saison Actuelle
+                            </h5>
+
+                            @if (estGardien)
+                            {
+                                <div class="row g-2 text-center">
+                                    <div class="col-6">
+                                        <div class="p-2 border rounded bg-white shadow-sm">
+                                            <small class="text-muted d-block fw-bold">Victoires</small>
+                                            <span class="fs-4 fw-bold text-success">@(Model.Statistique?.victoires ?? 0)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-2 border rounded bg-white shadow-sm">
+                                            <small class="text-muted d-block fw-bold">% ARRÊTS</small>
+                                            <span class="fs-4 fw-bold text-primary">@(Model.Statistique?.pourcentageArrets?.ToString("0.000") ?? "0.000")</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row g-2 text-center">
+                                    <div class="col-4">
+                                        <div class="p-2 border rounded bg-white shadow-sm">
+                                            <small class="text-muted d-block fw-bold">BUTS</small>
+                                            <span class="fs-4 fw-bold">@(Model.Statistique?.buts ?? 0)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="p-2 border rounded bg-white shadow-sm">
+                                            <small class="text-muted d-block fw-bold">PASSES</small>
+                                            <span class="fs-4 fw-bold">@(Model.Statistique?.passes ?? 0)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="p-2 border rounded bg-dark text-warning shadow-sm">
+                                            <small class="d-block fw-bold">PTS</small>
+                                            <span class="fs-4 fw-bold">@((Model.Statistique?.buts ?? 0) + (Model.Statistique?.passes ?? 0))</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <div class="text-center mt-3 small text-muted">
+                                Matchs joués : @(Model.Statistique?.matchs ?? 0)
+                            </div>
+                        </div>
+                    </div>
+
+                    @* Boutons d'action *@
+                    <div class="mt-4 pt-4 border-top d-flex flex-wrap gap-2">
+                        @* Bouton Modifier *@
+                        <a asp-action="JoueurModifier" asp-route-id="@Model.Idj" class="btn btn-warning fw-bold px-4 shadow-sm">
+                            <i class="bi bi-pencil-square me-2"></i>MODIFIER
+                        </a>
+
+                        @* Nouveau Bouton : Statistiques Avancées *@
+                        <a asp-action="JoueurDetailsStatistique" asp-route-id="@Model.Idj" class="btn btn-dark fw-bold px-4 shadow-sm">
+                            <i class="bi bi-bar-chart-line me-2"></i>STATISTIQUES AVANCÉES
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

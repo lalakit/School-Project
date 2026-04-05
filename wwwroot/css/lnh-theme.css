@@ -1,0 +1,53 @@
+/* --- Couleurs Globales LNH --- */
+:root {
+    --lnh-blue: #00205B;
+    --lnh-red: #C8102E;
+    --lnh-silver: #A2AAAD;
+}
+
+/* --- Adaptations du Thème --- */
+[data-bs-theme="dark"] {
+    --bs-body-bg: #0b0d0f;
+    --card-bg: #1a1d20;
+    --card-border: #2d3238;
+}
+
+[data-bs-theme="light"] {
+    --bs-body-bg: #f4f7f9;
+    --card-bg: #ffffff;
+    --card-border: #dee2e6;
+}
+
+/* --- Style des Cartes d'Équipes --- */
+.card-team {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-top: 4px solid var(--lnh-blue); /* Barre bleue distinctive */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+    .card-team:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        border-top-color: var(--lnh-red); /* Change au rouge au survol */
+    }
+
+/* Style de la barre de navigation */
+.navbar-lnh {
+    background-color: var(--lnh-blue) !important;
+    border-bottom: 3px solid var(--lnh-red);
+}
+[data-bs-theme='dark'] body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+[data-bs-theme='dark'] .footer {
+    background-color: #1a1a1a !important;
+    border-top-color: #333 !important;
+}
+
+[data-bs-theme='dark'] .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}

@@ -1,0 +1,455 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\exercice\\TP2LnhWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\tp2lnhwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:tp2lnhwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\bd\\creationdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:bd\\creationdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\bd\\insertdata.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:bd\\insertdata.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\wwwroot\\donnees\\lnh_2025_2026.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:wwwroot\\donnees\\lnh_2025_2026.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\controllers\\equipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:controllers\\equipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\joueurcreer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\joueurcreer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\joueurmodifier.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\joueurmodifier.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\joueurdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\joueurdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\joueurparequipe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\joueurparequipe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\models\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:models\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\equipemodifier.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\equipemodifier.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\equipecreer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\equipecreer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\joueurdetailsstatistique.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\joueurdetailsstatistique.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\joueursupprimer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\joueursupprimer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\controllers\\lecteurextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:controllers\\lecteurextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\wwwroot\\css\\lnh-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:wwwroot\\css\\lnh-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\models\\equipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:models\\equipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\models\\equipevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:models\\equipevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\views\\equipes\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:views\\equipes\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\models\\joueurvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:models\\joueurvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\bd\\creationdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:bd\\creationdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|c:\\exercice\\tp2lnhwebapp\\bd\\insertdata.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5586F885-1990-0036-367E-AFBFB46A4E28}|TP2LnhWebApp.csproj|solutionrelative:bd\\insertdata.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReadMe.txt",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\ReadMe.txt",
+              "RelativeDocumentMoniker": "ReadMe.txt",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\ReadMe.txt",
+              "RelativeToolTip": "ReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-05T14:12:16.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InsertData.sql ",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\BD\\InsertData.sql",
+              "RelativeDocumentMoniker": "BD\\InsertData.sql",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\BD\\InsertData.sql",
+              "RelativeToolTip": "BD\\InsertData.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-05T14:10:44.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "creationDB.sql ",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\BD\\creationDB.sql",
+              "RelativeDocumentMoniker": "BD\\creationDB.sql",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\BD\\creationDB.sql",
+              "RelativeToolTip": "BD\\creationDB.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-05T14:10:37.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "lnh_2025_2026.json",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\wwwroot\\Donnees\\lnh_2025_2026.json",
+              "RelativeDocumentMoniker": "wwwroot\\Donnees\\lnh_2025_2026.json",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\wwwroot\\Donnees\\lnh_2025_2026.json",
+              "RelativeToolTip": "wwwroot\\Donnees\\lnh_2025_2026.json",
+              "ViewState": "AgIAABtqAAAAAAAAAAAQwFJsAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-05T03:46:23.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JoueurCreer.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurCreer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\JoueurCreer.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurCreer.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\JoueurCreer.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAJ0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-04T21:39:35.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JoueurModifier.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurModifier.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\JoueurModifier.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurModifier.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\JoueurModifier.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAFcAAACPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-04T19:36:20.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JoueurDetailsStatistique.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurDetailsStatistique.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\JoueurDetailsStatistique.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurDetailsStatistique.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\JoueurDetailsStatistique.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-04T19:27:48.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JoueurSupprimer.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurSupprimer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\JoueurSupprimer.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurSupprimer.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\JoueurSupprimer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-04T16:43:16.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JoueurDetails.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\JoueurDetails.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurDetails.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\JoueurDetails.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAUwGkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-04T02:06:58.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JoueurParEquipe.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurParEquipe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\JoueurParEquipe.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\JoueurParEquipe.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\JoueurParEquipe.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwA4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-03T19:55:49.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EquipeModifier.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\EquipeModifier.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\EquipeModifier.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\EquipeModifier.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\EquipeModifier.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-03T19:26:38.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EquipeCreer.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\EquipeCreer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\EquipeCreer.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\EquipeCreer.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\EquipeCreer.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAYwG8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-02T00:07:42.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LecteurExtension.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Controllers\\LecteurExtension.cs",
+              "RelativeDocumentMoniker": "Controllers\\LecteurExtension.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Controllers\\LecteurExtension.cs",
+              "RelativeToolTip": "Controllers\\LecteurExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T18:53:04.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAIwI4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T23:59:24.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\Index.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\Index.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-21T22:03:48.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EquipesController.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Controllers\\EquipesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EquipesController.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Controllers\\EquipesController.cs",
+              "RelativeToolTip": "Controllers\\EquipesController.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAtwPcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T21:17:32.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-21T17:36:13.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:37:40.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Equipe.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Models\\Equipe.cs",
+              "RelativeDocumentMoniker": "Models\\Equipe.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Models\\Equipe.cs",
+              "RelativeToolTip": "Models\\Equipe.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:04:03.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EquipeVM.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Models\\EquipeVM.cs",
+              "RelativeDocumentMoniker": "Models\\EquipeVM.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Models\\EquipeVM.cs",
+              "RelativeToolTip": "Models\\EquipeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T23:49:51.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Joueur.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Models\\Joueur.cs",
+              "RelativeDocumentMoniker": "Models\\Joueur.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Models\\Joueur.cs",
+              "RelativeToolTip": "Models\\Joueur.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAQwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:02:59.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipes\\Privacy.cshtml",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Views\\Equipes\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Equipes\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:07:24.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "JoueurVM.cs",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\Models\\JoueurVM.cs",
+              "RelativeDocumentMoniker": "Models\\JoueurVM.cs",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\Models\\JoueurVM.cs",
+              "RelativeToolTip": "Models\\JoueurVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T19:20:44.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "lnh-theme.css",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\wwwroot\\css\\lnh-theme.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\lnh-theme.css",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\wwwroot\\css\\lnh-theme.css",
+              "RelativeToolTip": "wwwroot\\css\\lnh-theme.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-23T00:00:32.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TP2LnhWebApp.csproj",
+              "DocumentMoniker": "C:\\exercice\\TP2LnhWebApp\\TP2LnhWebApp.csproj",
+              "RelativeDocumentMoniker": "TP2LnhWebApp.csproj",
+              "ToolTip": "C:\\exercice\\TP2LnhWebApp\\TP2LnhWebApp.csproj",
+              "RelativeToolTip": "TP2LnhWebApp.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-21T17:52:30.558Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 76,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

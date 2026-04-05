@@ -1,0 +1,116 @@
+﻿@model Tp2LnhWebApp.Models.Equipe
+
+@{
+    ViewData["Title"] = "Modifier l'Équipe : " + Model.Nom;
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 bg-body-tertiary">
+
+                @* Header stylisé *@
+                <div class="card-header text-white text-center py-3" style="background-color: #b11226;">
+                    <h3 class="mb-0 text-uppercase fw-bold">
+                        <i class="bi bi-pencil-square me-2"></i>Modifier l'Équipe
+                    </h3>
+                </div>
+
+                <div class="card-body p-4 p-md-5">
+                    @* Ajout de l'enctype pour permettre l'envoi de fichiers *@
+                    <form asp-action="EquipeModifier" method="post" enctype="multipart/form-data">
+
+                        @* IMPORTANT : Champ caché pour l'ID de l'équipe *@
+                        <input type="hidden" asp-for="Ide" />
+                        @* On conserve les chemins actuels des logos si aucun nouveau fichier n'est choisi *@
+                        <input type="hidden" asp-for="Logo_clair" />
+                        <input type="hidden" asp-for="Logo_sombre" />
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="row">
+                            @* Informations de base *@
+                            <div class="col-md-8 mb-3">
+                                <label asp-for="Nom" class="form-label fw-bold small opacity-75 text-uppercase">Nom de l'équipe</label>
+                                <input asp-for="Nom" class="form-control bg-body border-secondary-subtle" required />
+                                <span asp-validation-for="Nom" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Code" class="form-label fw-bold small opacity-75 text-uppercase">Code (TRICODE)</label>
+                                <input asp-for="Code" class="form-control bg-body border-secondary-subtle text-center fw-bold" maxlength="3" required />
+                                <span asp-validation-for="Code" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <hr class="my-4" />
+
+                        @* Gestion des Logos *@
+                        <div class="row">
+                            @* Logo Clair *@
+                            <div class="col-md-6 mb-4 text-center">
+                                <label class="form-label fw-bold small opacity-75 text-uppercase d-block text-start">Logo (Fond Clair)</label>
+                                <div class="mb-3">
+                                    @if (!string.IsNullOrEmpty(Model.Logo_clair))
+                                    {
+                                        <img src="@Model.Logo_clair" class="img-thumbnail mb-2" style="height: 100px; background-color: #f8f9fa;" alt="Logo clair actuel" />
+                                    }
+                                    <input type="file" name="logoClairFile" class="form-control form-control-sm" accept="image/*" />
+                                </div>
+                            </div>
+
+                            @* Logo Sombre *@
+                            <div class="col-md-6 mb-4 text-center">
+                                <label class="form-label fw-bold small opacity-75 text-uppercase d-block text-start">Logo (Fond Sombre)</label>
+                                <div class="mb-3">
+                                    @if (!string.IsNullOrEmpty(Model.Logo_sombre))
+                                    {
+                                        <img src="@Model.Logo_sombre" class="img-thumbnail mb-2" style="height: 100px; background-color: #343a40;" alt="Logo sombre actuel" />
+                                    }
+                                    <input type="file" name="logoSombreFile" class="form-control form-control-sm" accept="image/*" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info py-2">
+                            <i class="bi bi-info-circle me-2"></i>
+                            <small>Laissez les champs de fichiers vides pour conserver les logos actuels.</small>
+                        </div>
+
+                        @* Boutons d'action *@
+                        <div class="d-flex justify-content-between align-items-center mt-5 pt-3 border-top">
+                            <a asp-action="Index" class="btn btn-outline-secondary px-4 fw-bold shadow-sm">
+                                <i class="bi bi-arrow-left me-2"></i>ANNULER
+                            </a>
+                            <button type="submit" class="btn btn-success btn-lg px-5 fw-bold shadow">
+                                <i class="bi bi-check-all me-2"></i>CONFIRMER
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control:focus {
+        border-color: #b11226 !important;
+        box-shadow: 0 0 0 0.25rem rgba(177, 18, 38, 0.15);
+    }
+
+    .img-thumbnail {
+        max-width: 150px;
+        transition: transform 0.2s;
+    }
+
+        .img-thumbnail:hover {
+            transform: scale(1.05);
+        }
+</style>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

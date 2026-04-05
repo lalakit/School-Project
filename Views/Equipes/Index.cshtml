@@ -1,0 +1,56 @@
+﻿@model TP2LnhWebApp.Models.EquipeVM
+
+@{
+    ViewData["Title"] = "Équipes";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1><i class="bi bi-shield-shaded"></i> Équipes LNH</h1>
+    <a asp-action="EquipeCreer" class="btn btn-success rounded-circle shadow" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+        <i class="bi bi-plus-lg fs-4"></i>
+    </a>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    @foreach (var equipe in Model.Equipes)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 transition-card">
+                @* On choisit le logo selon le thème via une petite classe CSS ou on laisse le logo clair par défaut *@
+                <img src="@equipe.Logo_clair" class="card-img-top p-3" alt="Logo @equipe.Nom" style="max-height: 150px; object-fit: contain;">
+
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">@equipe.Nom</h5>
+                    <p class="card-text">
+                        <span class="badge badge-code">@equipe.Code</span>
+                        <br />
+                        <small class="text-muted">@equipe.NombreJoueurs Joueurs</small>
+                    </p>
+                </div>
+
+                <div class="card-footer bg-transparent border-top-0 d-grid pb-3">
+                    @* Lien vers l'action EquipeModifier du contrôleur Equipes *@
+                    <a asp-action="EquipeModifier" asp-route-id="@equipe.Ide"
+                       class="btn btn-warning position-absolute shadow"
+                       style="bottom: 0; right: 0; width: 50px; height: 50px; border-radius: 20px 0 0 0; display: flex; align-items: center; justify-content: center; border: none;">
+                        <i class="bi bi-pencil-fill fs-5 text-dark"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+    
+
+
+<nav class="mt-5">
+    <ul class="pagination justify-content-center">
+        @for (int i = 1; i <= Model.PagesTotales; i++)
+        {
+            <li class="page-item @(i == Model.PageCourante ? "active" : "")">
+                <a class="page-link shadow-sm" asp-action="Index" asp-route-page="@i">@i</a>
+            </li>
+
+        }
+    </ul>
+</nav>

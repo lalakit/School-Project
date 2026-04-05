@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TP2LnhWebApp
+build_property.RootNamespace = TP2LnhWebApp
+build_property.ProjectDir = C:\exercice\TP2LnhWebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\exercice\TP2LnhWebApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/EquipeCreer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xFcXVpcGVDcmVlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/EquipeModifier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xFcXVpcGVNb2RpZmllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/JoueurCreer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xKb3VldXJDcmVlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/JoueurDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xKb3VldXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/JoueurDetailsStatistique.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xKb3VldXJEZXRhaWxzU3RhdGlzdGlxdWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/JoueurModifier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xKb3VldXJNb2RpZmllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/JoueurParEquipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xKb3VldXJQYXJFcXVpcGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/JoueurSupprimer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xKb3VldXJTdXBwcmltZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Equipes/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlc1xQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/exercice/TP2LnhWebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wrt93fjcst

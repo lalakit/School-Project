@@ -1,0 +1,189 @@
+﻿@model Tp2LnhWebApp.Models.Joueur
+
+@{
+    ViewData["Title"] = "Fiche Analytique - " + Model.Nom;
+    var estGardien = Model.TypeJoueur?.ToLower() == "gardien";
+    var stats = Model.Statistique;
+}
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-lg border-0 overflow-hidden">
+
+
+        <div class="card-header text-white d-flex justify-content-between align-items-center py-3" style="background-color: #b11226;">
+            <h3 class="mb-0 text-uppercase fw-bold">
+                <i class="bi bi-graph-up-arrow me-2"></i>Fiche Analytique
+            </h3>
+            <div class="d-flex gap-2">
+                <a asp-action="JoueurModifier" asp-route-id="@Model.Idj" class="btn btn-sm btn-warning fw-bold shadow-sm text-dark">
+                    <i class="bi bi-pencil-fill me-1"></i>MODIFIER
+                </a>
+                <a asp-action="JoueurParEquipe" asp-route-id="@Model.Ide" class="btn btn-sm btn-outline-light fw-bold shadow-sm border-2">
+                    <i class="bi bi-arrow-left me-1"></i>RETOUR
+                </a>
+            </div>
+        </div>
+
+        <div class="row g-0">
+
+            <div class="col-lg-4 bg-light d-flex flex-column align-items-center p-4 border-end">
+                <div class="position-relative mb-3">
+                    <img src="@Model.Photo" class="img-fluid rounded shadow-lg border border-4 border-white"
+                         style="width: 260px; height: 320px; object-fit: cover;" alt="@Model.Nom">
+                    <div class="position-absolute bottom-0 end-0 bg-dark text-white px-3 py-1 fw-bold fs-3 shadow">
+                        #@Model.Numero
+                    </div>
+                </div>
+
+                <h2 class="fw-bold text-dark text-center mb-1">@Model.Nom</h2>
+                <span class="badge fs-6 px-4 mb-4" style="background-color: #00205B;">@Model.Poste</span>
+
+
+                <div class="w-100">
+                    <h6 class="text-uppercase text-muted fw-bold border-bottom pb-2 mb-3">Profil Physique</h6>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="p-2 bg-white rounded border-bottom border-3 border-danger shadow-sm text-center">
+                                <small class="text-muted d-block fw-bold">ÂGE</small>
+                                <span class="fw-bold">@Model.ProfilDetails.age ans</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-2 bg-white rounded border-bottom border-3 border-danger shadow-sm text-center">
+                                <small class="text-muted d-block fw-bold">MAIN</small>
+                                <span class="fw-bold">@Model.Main</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-2 bg-white rounded border-bottom border-3 border-danger shadow-sm text-center">
+                                <small class="text-muted d-block fw-bold">TAILLE / POIDS</small>
+                                <span class="fw-bold">@Model.ProfilDetails.tailleCm cm / @Model.ProfilDetails.poidsKg kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-auto pt-4 w-100 text-center">
+                    @if (ViewBag.logo != null)
+                    {
+                        <img src="@ViewBag.logo" alt="Logo" style="max-height: 70px; filter: grayscale(20%); opacity: 0.8;" />
+                    }
+                    <div class="mt-2 small text-muted">ID ESPN: @Model.Ide</div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 bg-white p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="fw-bold text-dark mb-0 text-uppercase">Statistiques Saison @ViewBag.Saison</h4>
+                    <span class="badge bg-secondary">PJ: @(stats?.matchs ?? 0)</span>
+                </div>
+
+                <div class="row g-3">
+                    @if (estGardien)
+                    {
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light p-4 border-top border-5 border-primary shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block mb-1">EFFICACITÉ (SV%)</small>
+                                <span class="display-5 fw-bold text-primary">@(stats?.pourcentageArrets?.ToString("0.000") ?? "0.000")</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 bg-light p-4 border-top border-5 border-danger shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block mb-1">MOYENNE (GAA)</small>
+                                <span class="display-5 fw-bold text-danger">@(stats?.moyenneButsAlloues?.ToString("0.00") ?? "0.00")</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 bg-light p-3 shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block">VICTOIRES</small>
+                                <span class="fs-3 fw-bold text-success">@(stats?.victoires ?? 0)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 bg-light p-3 shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block">DÉFAITES</small>
+                                <span class="fs-3 fw-bold text-muted">@(stats?.defaites ?? 0)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 bg-light p-3 shadow-sm text-center text-dark">
+                                <small class="text-muted fw-bold d-block">BLANCHISSAGES</small>
+                                <span class="fs-3 fw-bold text-dark">@(stats?.blanchissages ?? 0)</span>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+
+                        <div class="col-12 col-md-5">
+                            <div class="card h-100 border-0 bg-light p-4 border-top border-5 border-primary shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block mb-1 text-uppercase">Points</small>
+                                <span class="display-4 fw-bold text-primary">@(stats?.points ?? 0)</span>
+                                <div class="d-flex justify-content-around mt-2 border-top pt-2 fw-bold text-dark">
+                                    <span>B: @(stats?.buts ?? 0)</span>
+                                    <span>A: @(stats?.passes ?? 0)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="card h-100 border-0 bg-light p-3 border-top border-4 border-dark shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block mb-1">+/-</small>
+                                <span class="fs-2 fw-bold @(stats?.plusMoins >= 0 ? "text-success" : "text-danger")">
+                                    @(stats?.plusMoins > 0 ? "+" : "")@(stats?.plusMoins ?? 0)
+                                </span>
+                                <small class="text-muted small">Différentiel</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card h-100 border-0 bg-light p-3 shadow-sm text-center">
+                                <small class="text-muted fw-bold d-block mb-1">TIRS</small>
+                                <span class="fs-2 fw-bold">@(stats?.tirs ?? 0)</span>
+                                <small class="text-success fw-bold d-block">@(stats?.pourcentageTirs?.ToString("0.0") ?? "0.0") % Eff.</small>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 mt-3">
+                            <div class="card border-0 shadow-sm bg-dark text-white p-3 h-100">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-warning fw-bold mb-0 small text-uppercase">Powerplay (PP)</h6>
+                                        <div class="mt-1 fs-5">
+                                            <span class="me-3">Buts: <b>@(stats?.avantageNumerique?.buts ?? 0)</b></span>
+                                            <span>Pts: <b>@(stats?.points ?? 0)</b></span>
+                                        </div>
+                                    </div>
+                                    <i class="bi bi-lightning-charge fs-2 text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-3">
+                            <div class="card border-0 shadow-sm bg-secondary text-white p-3 h-100">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-white fw-bold mb-0 small text-uppercase">Temps de glace moyen</h6>
+                                        <span class="fs-3 fw-bold">@(stats?.tempsGlaceMoyen ?? "00:00")</span>
+                                    </div>
+                                    <i class="bi bi-clock-history fs-2 text-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+
+                <div class="mt-5 text-end">
+                    <a asp-action="JoueurSupprimer" asp-route-id="@Model.Idj"
+                       class="text-danger text-decoration-none small fw-bold"
+                       onclick="return confirm('Supprimer définitivement ce joueur ?');">
+                        <i class="bi bi-trash3 me-1"></i>SUPPRIMER LE JOUEUR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

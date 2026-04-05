@@ -1,0 +1,30 @@
+﻿@model Tp2LnhWebApp.Models.Joueur
+
+@{
+    ViewData["Title"] = "Supprimer un joueur";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-white text-center" style="background-color: #b11226;">
+                    <h3 class="mb-0">Supprimer un joueur</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="JoueurSupprimer" method="post">
+                        <input type="hidden" asp-for="Idj" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <p>Voulez-ous vraiment supprimer @Model.Nom ?</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <a asp-action="JoueurParEquipe" asp-route-id="@Model.Ide" class="btn btn-outline-secondary">Annuler</a>
+                            <button type="submit" class="btn btn-danger px-4 d-flex align-items-center fw-bold shadow">
+                                <i class="bi bi-trash3-fill me-2"></i> CONFIRMER LA SUPPRESSION
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
