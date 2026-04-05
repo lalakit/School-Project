@@ -1,5 +1,5 @@
 NHL Team Management System
-This project is a .NET Web MVC application designed to manage National Hockey League (NHL) teams, players, and game statistics. Developed as part of my programming certification, it demonstrates the implementation of a full-stack web architecture using Microsoft technologies.
+This project is a .NET Web MVC application designed to manage National Hockey League (NHL) teams, players, and game statistics. Developed as part of my programming certification, it demonstrates the implementation of a full-stack web architecture using Microsoft technologies (no Entity Framework)
 
 🚀 Features
 Team Management: Create, Read, Update, and Delete (CRUD) operations for NHL franchises.
